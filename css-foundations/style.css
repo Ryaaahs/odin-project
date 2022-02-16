@@ -1,0 +1,74 @@
+
+/* Universal selector 
+    Selects elements of any type
+*/ 
+* {
+    color: purple
+}
+
+/* 
+    Type selector
+    Selects all types (elements) of the given element type
+*/ 
+div {
+    color: white
+}
+
+/*
+    Class selector
+    Selects all elements of a given class
+*/ 
+.alert-text {
+    color: red;
+}
+
+/*
+    ID selector
+    Selects ab element with the given ID (Can only be used on one element)
+*/
+#title {
+    background-color: red;
+}
+
+/*
+    Share the same declarations
+    .read {
+    several unique declarations 
+    }
+
+    .unread {
+        several unique declarations 
+    }
+
+    Grouping selector
+    Groups selectors together that share the same declarations
+*/ 
+
+.read, 
+.unread {
+  color: white;
+  background-color: black;
+}
+
+/*
+    Selector chaining
+    Subsection as a unique style, but we want to custom a part of it
+    We would chain another part to it to change the style
+    Cannot chain two type selectors
+*/  
+.subsection.header {
+    color: red;
+}
+
+/*
+    Four types of combinators 
+    Focusing on Descendant combinator
+    Selects the child that is contained within the parent ancestor
+    Can have an endless amount of downwards chaining.
+    Parent: ancestor
+    Child: contents 
+*/ 
+.ancestor .contents {
+    /* some declarations */
+    color: red;
+}
