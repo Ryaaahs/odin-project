@@ -72,3 +72,69 @@ div {
     /* some declarations */
     color: red;
 }
+
+/*
+    color sets a element's text colour, while background-color sets the background colour of an element
+    color can use different values: hex, rgb, hsl
+    currentColor uses the current color assigned to the element
+
+    #myDIV {
+        color: blue; Blue text color 
+        border: 10px solid currentcolor;  Blue border color 
+    }
+*/ 
+
+/*
+    Use font-family to have backup fonts, in case the browser doesn't have a backup for it.
+    Using either a 'font family name' which requires quotes, or a generic name that doesn't require it.
+
+    Along with different font properties (size (Text size), weight (Boldness of font), align (horizontal alignment))
+*/ 
+
+/*
+    To not lose image proportions
+    Stating height and width, predefines the space on the page, which is good, as it won't drastic change the content 
+    of the page on load, rather it will be a blank space till it loads in
+    img {
+        height: auto;
+        width: 500px;
+    }
+*/ 
+
+/* 
+    Browsers contain defaults styles that are different between all of them
+
+    CSS Cascade (CSS Order) 1 will overwrite 2 and likewise for the rest (Being more specific will overvide also)
+    1 Inline styles
+    2 ID selectors
+    3 Class selectors
+    4 Type selectors
+
+    Universal and combinators have no precedence on this list
+
+    #subsection {
+        color: blue;
+    }
+    
+    .main .list { 
+        color: red; This will override, as it's more specific.
+    } 
+*/
+
+/* 
+    Child combinator '>'
+*/
+
+/* 
+    Inheritance
+    Parent passing down properties to child elements
+    most properties will not be inherited.
+    specific delaration will override the parents specificity
+*/ 
+
+/*
+    Rule Order
+    Whichever rule was defined last (Even if there are conflicts [same property defined]) will be used [Winner]
+*/
+
+/* Currently at Adding CSS to HTML*/ 
